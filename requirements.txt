@@ -3,4 +3,3 @@ gunicorn
 Jinja2
 MarkupSafe
 sklearn
-pickle
