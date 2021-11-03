@@ -32,9 +32,9 @@ def predict():
     output = model.predict(features_value)
         
     if output > 0.5:
-        prediction = "Your have good chance of selection. Chance : {}".format(output)
+        prediction = "Your have good chance of selection. Chance : {}%".format(output*100)
     else:
-        prediction = "Your don't have good chance of selection. Chance : {}".format(output)
+        prediction = "Your don't have good chance of selection. Chance : {}%".format(output*100)
         
 
     return render_template('result.html', prediction=prediction)
