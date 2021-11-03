@@ -5,7 +5,7 @@ import pickle
 import os
 
 app = Flask(__name__)
-#model = pickle.load(open('Pickle_file_management.pkl', 'rb'))
+model = pickle.load(open('Pickle_file_management.pkl', 'rb'))
 
 @app.route('/')
 def home():
